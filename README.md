@@ -23,6 +23,10 @@ APIs & Services:
 Google Gemini Ai.
 Nasa power.
 
+License:
+- Licensed under: [Apache License 2.0](LICENSE)
+- Third-Party Attributions: See [NOTICE.md](NOTICE.md)
+
 Authors:
 Emmanuel Moreno
 Marco Guzmán
