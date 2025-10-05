@@ -8,9 +8,13 @@ import os
 # Tu API Key de la NASA (puedes moverla a una variable de entorno)
 NASA_API_KEY = "aZTAVcjEcpjJqHM0ni5zyrDh1PWlGnM4az92fSsk" 
 # Configura tu clave de API de Gemini (reemplaza con la tuya)
-GEMINI_API_KEY = "TU_API_KEY_DE_GEMINI"
+GEMINI_API_KEY = "AIzaSyBO2oEfDtkOWBI02GihjwI8oNj_F-paz7U"
 genai.configure(api_key=GEMINI_API_KEY)
-gemini_model = genai.GenerativeModel('gemini-pro')
+
+# --- CAMBIO CRÍTICO AQUÍ ---
+# Se actualizó el nombre del modelo para usar exactamente el que te funciona en tu otro proyecto.
+gemini_model = genai.GenerativeModel('gemini-2.5-flash-preview-05-20')
+
 
 
 # --- CÓDIGO DE LA API DE LA NASA (Integrado desde tu api.py) ---
