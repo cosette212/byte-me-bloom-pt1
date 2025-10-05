@@ -14,10 +14,10 @@ Powered by Gemini AI and NASA POWER API for accurate data and environmental cont
 
 Used tools:
 Frontend: 
-html, css, Javascript.
+html5, css3, Javascript ECMAScript 2024.
 
 Backend:
-python (Django).
+python3.7.3 (Django).
 
 APIs & Services:
 Google Gemini Ai.
