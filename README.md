@@ -28,8 +28,9 @@ License:
 - Third-Party Attributions: See [NOTICE.md](NOTICE.md)
 
 Authors:
-Emmanuel Moreno
-Marco Guzmán
-Carlos Plascencia 
-Kevín García 
-Inés Sanchez
+Angel Emmanuel Moreno Velazco, 
+Marco Guzmán Vizcarra,
+Carlos Emanuel Plascencia Gonzales,
+Kevín Uziel García Marquez,
+Inés del Socorro Sanchez Martinez,
+Regina Cosette Ordoñez Pinedo.
