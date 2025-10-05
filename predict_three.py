@@ -134,11 +134,6 @@ def predict_with_ensemble(image_path):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description="Clasifica una imagen usando un ensamble de modelos.")
-    parser.add_argument('--image', type=str, required=True, help='Ruta a la imagen que quieres clasificar.')
-    args = parser.parse_args()
-    
-    predict_with_ensemble(args.image)
-
-
-
+    # Ruta de imagen por defecto (puedes cambiarla)
+    image_path = 'images/2.jpg'
+    predict_with_ensemble(image_path)
