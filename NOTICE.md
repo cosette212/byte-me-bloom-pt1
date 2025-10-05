@@ -1,18 +1,18 @@
-# Atribuciones de Terceros
+Third-Party Attributions
 
-Este proyecto utiliza los siguientes servicios y APIs:
+This project utilizes the following external services and APIs:
 
-## Google Gemini AI
-- Servicio: API de inteligencia artificial
-- Términos: [Términos de Servicio de Google Cloud](https://cloud.google.com/terms/)
-- Uso: Identificación de flores y provisión de información
+Google Gemini AI
+- Service: Artificial Intelligence API
+- Terms: [Google Cloud Terms of Service](https://cloud.google.com/terms/)
+- Use: Flower identification and information provision
 
-## NASA POWER API
-- Servicio: Datos ambientales y climáticos
-- Licencia: [NASA Open Source Agreement](https://ti.arc.nasa.gov/opensource/)
-- Uso: Datos de crecimiento regional y patrones ambientales
+NASA POWER API  
+- Service: Environmental and climate data
+- License: [NASA Open Source Agreement](https://ti.arc.nasa.gov/opensource/)
+- Use: Regional growth data and environmental patterns
 
-## PlantNet-300k (Referencia)
-- Dataset: Referencia para entrenamiento de modelos
-- Licencia: BSD 2-Clause License
+PlantNet-300k 
+- Dataset: Model training reference
+- License: BSD 2-Clause License
 - Copyright: (c) 2021, Pl@ntNet
