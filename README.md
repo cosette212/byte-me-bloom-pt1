@@ -8,7 +8,7 @@ IMPORTANT! Essential Files Notice:
 Without these files, the program and prediction model cannot be loaded. The following links allow you to download the trained model. It is essential to verify that these files are located in the project folder, after its extraction.
 models.py: https://drive.google.com/uc?export=download&id=1qrsLs8SEn3aZgTZf67Emf7-OIGk9R4LL
 json: https://drive.google.com/uc?export=download&id=144G1tHshn_g7BuRetAms8TVikpCkoZyL
-WARNING! make sure to move these documents to the predict folder 
+WARNING! make sure to move these documents to the predict folder ONLY THE DOCUMENTS: alexnet_weights_best_acc.tar   efficientnet_b4_weights_best_acc.tar   inception_resnet_v2_weights_best_acc.tar    plantnet300K_metadata      vgg11_weights_best_acc.tar
 
 Key Features:
 1)Instant Flower Identification:
