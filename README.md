@@ -4,6 +4,10 @@ About the project:
 Is an innovative web platform that allows users to upload photos of flowers and instantly receive detailed information about them, including the species, growth patterns in their region, ideal care, and environmental insights.
 The platform goes beyond simple identification, functioning as a social network for nature enthusiasts. Every shared photo becomes part of a collective map that shows how people interact with local flora, allowing them to explore discoveries, comment on experiences, and learn through environmental APIs and AI-powered recognition tools.
 
+IMPORTANT! Essential Files Notice:
+Without these files, the program and prediction model cannot be loaded. The following links allow you to download the trained model. It is essential to verify that these files are located in the project folder.
+
+
 Key Features:
 1)Instant Flower Identification:
 Upload a photo and get detailed info on species, care, and regional growth patterns.
