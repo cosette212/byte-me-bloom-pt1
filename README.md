@@ -28,7 +28,7 @@ License:
 - Third-Party Attributions: See [NOTICE.md](NOTICE.md)
 
 Image Disclaimer
-IMPORTANT: The images contained in the images folder of this project:
+IMPORTANT: The images contained in the [`images`](./images) folder of this project:
 1) Were not use for training the predictive model
 2) Are included solely for testing and demonstration purposes of the model
 3) Are original images taken directly by us
