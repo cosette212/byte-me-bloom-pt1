@@ -5,7 +5,8 @@ Is an innovative web platform that allows users to upload photos of flowers and 
 The platform goes beyond simple identification, functioning as a social network for nature enthusiasts. Every shared photo becomes part of a collective map that shows how people interact with local flora, allowing them to explore discoveries, comment on experiences, and learn through environmental APIs and AI-powered recognition tools.
 
 IMPORTANT! Essential Files Notice:
-Without these files, the program and prediction model cannot be loaded. The following links allow you to download the trained model. It is essential to verify that these files are located in the project folder.
+Without these files, the program and prediction model cannot be loaded. The following links allow you to download the trained model. It is essential to verify that these files are located in the project folder, after its extraction.
+https://drive.google.com/uc?export=download&id=1qrsLs8SEn3aZgTZf67Emf7-OIGk9R4LL
 
 
 Key Features:
