@@ -1,44 +1,44 @@
 # Virtual Environment Setup  
 
-Este proyecto requiere configurar un entorno virtual antes de ejecutarse.  
+This project requires setting up a virtual environment before running.  
 
-## 1. Verificar instalación de Python  
-- **Comando**: `python --version` (o `py --version`)  
-- **Requisito**: Python 3.9 o superior  
+## 1. Verify Python installation  
+- **Command**: `python --version` (or `py --version`)  
+- **Requirement**: Python 3.9 or higher  
 
-## 2. Abrir carpeta del proyecto  
-- **Comando**: `cd HACKATON2025`  
+## 2. Open the project folder  
+- **Command**: `cd HACKATON2025`  
 
-## 3. Crear el entorno virtual  
-- **Windows**: `python -m venv .venv` (o `py -m venv .venv`)  
+## 3. Create the virtual environment  
+- **Windows**: `python -m venv .venv` (or `py -m venv .venv`)  
 - **Mac / Linux**: `python3 -m venv .venv`  
-- **Resultado**: Se crea la carpeta `.venv` dentro del proyecto  
+- **Result**: Creates a `.venv` folder inside the project  
 
-## 4. Activar el entorno virtual  
+## 4. Activate the virtual environment  
 - **Windows (CMD)**: `.venv\Scripts\activate`  
 - **Windows (PowerShell)**: `.venv\Scripts\Activate.ps1`  
-  - Si hay error de permisos:  
+  - If you get a permissions error:  
     `Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned`  
 - **Mac / Linux**: `source .venv/bin/activate`  
-- **Indicador**: Aparece `(.venv)` en la terminal  
+- **Indicator**: You will see `(.venv)` in the terminal  
 
-## 5. Actualizar pip (opcional)  
-- **Comando**: `python -m pip install --upgrade pip`  
+## 5. Update pip (optional)  
+- **Command**: `python -m pip install --upgrade pip`  
 
-## 6. Instalar dependencias del proyecto  
-- **Comando**: `pip install -r requirements.txt`  
-- **Incluye**: Django, Pillow, requests, etc.  
+## 6. Install project dependencies  
+- **Command**: `pip install -r requirements.txt`  
+- **Includes**: Django, Pillow, requests, etc.  
 
-## 7. Colocar archivos de modelos  
-- **Acción**: Poner los archivos dentro de la carpeta **Predict** (⚠️ no en *models*).  
+## 7. Place model files  
+- **Action**: Put the files inside the **Predict** folder (⚠️ not inside *models*).  
 
-## 8. Entrar al proyecto  
-- **Comando**: `cd hackaton2025`  
+## 8. Enter the project  
+- **Command**: `cd hackaton2025`  
 
-## 9. Ejecutar el servidor  
-- **Comando**: `python manage.py runserver`  
+## 9. Run the server  
+- **Command**: `python manage.py runserver`  
 
-## 10. Acceder al host local  
-- **Salida esperada**:  
+## 10. Access the local host  
+- **Expected output**:  
   `Starting development server at http://127.0.0.1:8000/`  
-- **Acción**: Abrir el enlace en el navegador  
+- **Action**: Open the link in your browser (Ctrl + Click).  
