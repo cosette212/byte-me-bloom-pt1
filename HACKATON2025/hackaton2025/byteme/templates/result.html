@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/f8c37672bd.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@<opsz>,<wght>,<FILL>,<GRAD>" />
+    <meta charset="UTF-8">
+    <title>Resultado del Análisis</title>
+    <style>
+        body {
+            background: #0b0b0b;
+            color: white;
+            font-family: 'montserrat';
+            text-align: center;
+            padding: 50px;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            width: 50%;
+            margin: auto;
+        }
+        .reporte {
+            background-color: rgba(255,255,255,0.08);
+            border-radius: 15px;
+            margin-top: 30px;
+            padding: 20px;
+            text-align: left;
+            white-space: pre-wrap;
+        }
+
+        .result-image{
+            border-radius: 12px;
+            width: 40%;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1><i class="fa-solid fa-spa"></i> Results Analysis</h1>
+
+        {% if resultado %}
+            <div class="card">
+
+                {% if img_url %}
+                <div class="image-section">
+                    <img src="{{ img_url }}" alt="Analyzed Image" class="result-image">
+                </div>
+                {% endif %}
+
+                <div class="data-section">
+                    <p><strong><i class="fa-solid fa-layer-group"></i> Species:</strong> {{ resultado.class_name }}</p>
+                    <p><strong><i class="fa-solid fa-percent"></i> Confidence:</strong> {{ resultado.confidence }}%</p>
+                    <p><strong><i class="fa-solid fa-square-binary"></i> Used Model:</strong> {{ resultado.model }}</p>
+                    <p><strong><i class="fa-solid fa-location-dot"></i> Coordinates:</strong> {{ coords }}</p>
+                </div>
+            </div>
+
+            {% if reporte_ecologico %}
+            <div class="reporte">
+                <h2><i class="fa-solid fa-list-check"></i> Ecological Report</h2>
+                <p>{{ reporte_ecologico }}</p>
+            </div>
+            {% endif %}
+        {% else %}
+            <p class="no-result"><i class="fa-solid fa-ban"></i> No results were found.</p>
+        {% endif %}
+        
+        <br><br>
+        <a href="/" class="back-link" style="text-decoration: none; color: aliceblue; font-size: 24px;">
+            <i class="fa-solid fa-arrow-left"></i> Back
+        </a>
+    </div>
+</body>
+</html>

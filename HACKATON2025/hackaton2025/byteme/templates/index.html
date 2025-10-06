@@ -1,0 +1,362 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOOMWATCH: BYTE-ME</title>
+    <script defer src="pre"></script>
+    <script src="https://kit.fontawesome.com/f8c37672bd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@<opsz>,<wght>,<FILL>,<GRAD>" />
+    <style>
+        html{
+            font-family: 'montserrat';
+        }
+        body {
+            background-image: url("https://wallpapers.com/images/high/diagonal-earth-surface-hww6at6wjhw6vx4f.webp");
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            width: auto;
+            text-align: center;
+        }
+
+        /* TIPOGRAFÍAS */
+        h1 {
+            text-align: center;
+            color: #0f4e4a;
+            font-size: 70px;
+            margin: 10px;
+
+        }
+
+        h2 {
+            text-align: center;
+            color: black;
+            font-size: 50px;
+            margin: 10px;
+            background-color: rgba(255, 255, 255, 0.404);
+        }
+
+        h3 {
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            margin: 10px;
+        }
+
+        h4 {
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            margin: 10px;
+        }
+
+        h5 {
+            text-align: center;
+            color: white;
+            font-size: 15px;
+            margin: 10px;
+            background-color: rgba(0, 0, 0, 0.493);
+        }
+
+        /* LISTA DE INTEGRANTES */
+        .integrantes li {
+            color: white;
+            font-size: 25px;
+            margin: 20px;
+            width: 100%;
+            text-align: center;
+            list-style: none; 
+        }
+
+        /* PÁRRAFOS */
+        p.uno {
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 25px;
+            margin: 20px auto; 
+            width: 80%;
+            text-align: left;
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        p.dos, label {
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            margin: 20px auto; 
+            width: 80%;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* IMÁGENES */
+        .imagen-uno {
+            width: 25%;
+            height: auto;
+            border-radius: 15px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .imagen-dos {
+            width: 40%;
+            height: auto;
+            border-radius: 15px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .nasa {
+            width: 300px;
+            height: auto;
+            border-radius: 15px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        /* SECCIONES */
+        section {
+            margin: auto;
+            width: auto;
+            padding: 10px;
+        }
+
+        /* CONTENEDOR PRINCIPAL */
+        main {
+            width: auto;
+            margin-bottom: 50px;
+        }
+
+        @keyframes show{
+            from{
+                opacity: 0;
+                scale: 25%;
+            }
+            to{
+                opacity: 1;
+                scale: 100%;
+            }
+        }
+        img{
+            view-timeline-name: --image;
+            view-timeline-axis: block;
+
+            animation-timeline: --image;
+            animation-name: show;
+
+            animation-range: entry 25% cover 50%;
+            animation-fill-mode: both;
+        }
+
+        section.final{
+            display: flex;
+            flex-direction: column;
+            gap: 36px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form{
+            border: solid 1px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            align-items: center;
+            justify-content: center;
+            width: 60%;
+            background-color: rgba(240, 248, 255, 0.645);
+            font-size: 24px;
+            padding: 12px;
+            border-radius: 12px;
+        }
+
+        form .upload-button{
+            width: 30%;
+            background-color: #0f4e4a;
+            padding: 12px;
+            font-size: 15px;
+            border: #0f4e4a;
+            border-radius: 12px;
+            transition: all 0.2s ease-in-out;
+            color: azure;
+            font-weight: 700;
+        }
+
+        form .upload-button:hover{
+            background-color: #138179;
+            width: 32%;
+        }
+
+        .field{
+            padding: 5px;
+            border-radius: 12px;
+            border: solid 1px gray;
+            width: 30%;
+            text-align: center;
+            background-color: #b2e9e9;
+            color: black;
+            font-size: 20px;
+        }
+
+        .field::placeholder{
+            color: black;
+            font-size: 20px;
+        }
+
+        .intro{
+            font-size: 36px;
+            text-align: center;
+            background-color: aliceblue;
+            padding: 36px;
+            margin-bottom: 150px;
+        }
+
+        .upload-file-button{
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <img class="imagen-uno" src="{% static 'imagenes/logo.png' %}" alt="Chica tomando foto" class="imagen-uno" width="10%">
+        <h3>See the Land. Know the Life.</h3>
+
+    </nav>
+    
+    <p class="intro">
+        Upload a photo, add its location, and let our artificial intelligence model do the rest.
+        Identify the species, analyze the ecological conditions of the site, and receive a personalized report about the environment.
+        Technology and nature come together to help you understand the world you observe.
+    </p>
+
+    
+    <section class="proyecto-pt2">
+        <p class="dos"> 
+            Imagine Valeria, a passionate nature photographer, walking along a mountain trail with her camera in hand. Each click captures flowers that seemed ordinary…
+            until our project reveals that one of them is extremely rare in that region, and that its growth is due to the valley’s unique humidity and the special composition of the soil.
+            Valeria doesn’t just take photos anymore; now she understands the story behind every plant.
+        </p>
+        <img src="{% static 'imagenes/valeria 1.0.png' %}" alt="Foto con datos de cultivo" class="imagen-dos"> 
+    </section>
+    
+    <section class="proyecto-pt3">
+        <p class="dos"> 
+            At the same time, Marco, an agronomist, uploads images of crops from different terrains.
+            Thanks to our system, he discovers patterns that previously went unnoticed: why certain species thrive in acidic soils,
+            how temperature and climate influence growth, and which combinations of factors could be replicated elsewhere.
+        </p>
+        <img src="{% static 'imagenes/cultivo 1.0.png' %}" alt="Sofía en la naturaleza" class="imagen-dos"> 
+    </section>
+    
+    <section>
+        <p class="dos">
+            On the other hand, Sofía, a lover of ecotourism, shares images of plants in remote areas, learning in real time what makes those species unique and how they relate to their environment.
+            Each photograph becomes a story, each discovery a shared learning experience. 
+        </p>
+        <img class="imagen-dos" src="{% static 'imagenes/sofia 1.0.png' %}" alt="comunidad eco turística" class="nasa"> 
+    </section>
+
+    <section class="final">
+        <p class="dos">
+            This website is not just a catalog of images; it’s a space where the curious, professionals, and adventurers come together.
+            A place where plants tell their story, and where, very soon, we’ll be able to interact as a community; commenting, sharing experiences, and learning together from the nature that surrounds us.
+        </p>
+
+
+
+        <br>
+
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for="imagen"><i class="fa-solid fa-hand-pointer"></i> Select Image</label>
+            <label for="imagen-flor" class="field"><i class="fa-solid fa-window-restore"></i> Browse File</label>
+            <input type="file" name="imagen" accept="image/*" id="imagen-flor" required class="upload-file-button">
+            <img class="imagen-dos" id="prev" src="">
+            <script src="css/script.js"></script>
+
+            <label for="coordenadas"><i class="fa-solid fa-globe"></i> Coordinates</label>
+            <input class='field' list="coordenadas_list" id="coordenadas" name="coordenadas" placeholder="Ingresa las coordenadas a analizar">
+
+            <datalist id="coordenadas_list">
+                <option value="25.6866, -100.3161">Monterrey, Nuevo León</option>
+                <option value="19.4326, -99.1332">Ciudad de México, México</option>
+                <option value="20.6740, -103.3870">Guadalajara, Jalisco</option>
+                <option value="34.0522, -118.2437">Los Ángeles, Estados Unidos</option>
+                <option value="40.7128, -74.0060">Nueva York, Estados Unidos</option>
+                <option value="51.5074, -0.1278">Londres, Reino Unido</option>
+                <option value="48.8566, 2.3522">París, Francia</option>
+                <option value="35.6895, 139.6917">Tokio, Japón</option>
+                <option value="39.9042, 116.4074">Pekín, China</option>
+                <option value="-33.8688, 151.2093">Sídney, Australia</option>
+                <option value="-34.6037, -58.3816">Buenos Aires, Argentina</option>
+                <option value="41.9028, 12.4964">Roma, Italia</option>
+                <option value="55.7558, 37.6176">Moscú, Rusia</option>
+                <option value="37.7749, -122.4194">San Francisco, Estados Unidos</option>
+                <option value="52.5200, 13.4050">Berlín, Alemania</option>
+                <option value="1.3521, 103.8198">Singapur, Singapur</option>
+                <option value="40.4168, -3.7038">Madrid, España</option>
+                <option value="13.7563, 100.5018">Bangkok, Tailandia</option>
+                <option value="28.6139, 77.2090">Nueva Delhi, India</option>
+                <option value="-23.5505, -46.6333">São Paulo, Brasil</option>
+                <option value="31.2304, 121.4737">Shanghái, China</option>
+
+            </datalist>
+            <br><br>
+
+            <button type="submit" class="upload-button">Subir y predecir</button>
+            <br>
+        </form>
+        <br>
+
+
+
+        <h4>BLOOMWATCH</h4>
+        <img class="imagen-dos" src="{% static 'imagenes/comunidad.png' %}" alt="Logo BYTE-ME" class="nasa">
+        <h5>BLOOM IT!</h5>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const inputArchivo = document.getElementById('imagen-flor');
+            const imgPrevisualizacion = document.getElementById('prev');
+
+            inputArchivo.addEventListener('change', function(e) {
+                // Verifica si se ha seleccionado un archivo
+                if (e.target.files && e.target.files[0]) {
+                    const archivo = e.target.files[0];
+                    const reader = new FileReader();
+
+                    // Configura qué hacer cuando el FileReader termina de leer
+                    reader.onload = function(event) {
+                        // El resultado es un Data URL que contiene la imagen
+                        imgPrevisualizacion.src = event.target.result;
+                        imgPrevisualizacion.style.display = 'block'; // Muestra la imagen
+                    };
+
+                    // Lee el contenido del archivo como un Data URL (base64)
+                    reader.readAsDataURL(archivo);
+                } else {
+                    // Si no hay archivo, limpia la previsualización
+                    imgPrevisualizacion.src = '#';
+                    imgPrevisualizacion.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
