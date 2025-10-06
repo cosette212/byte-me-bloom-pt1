@@ -27,6 +27,24 @@ License:
 - Licensed under: [Apache License 2.0](LICENSE)
 - Third-Party Attributions: See [NOTICE.md](NOTICE.md)
 
+Image Disclaimer
+IMPORTANT: The images contained in the images folder of this project:
+1) Were not use for training the predictive model
+2) Are included solely for testing and demonstration purposes of the model
+3) Are original images taken directly by us
+4) Are not extracted from the internet or public databases
+5) Can be freely used to test and evaluate this project
+
+Usage Permissions:
+These images may be used without restrictions for:
+1)Testing the trained model's functionality
+2)Demonstrating prediction capabilities
+3)Validating results under controlled conditions
+4)Educational and research purposes   Technical Note:
+The model's actual training dataset comes from sources and datasets different from the files included in this folder.
+
+Please note: The only exceptions are images 1.jpg through 4.jpg, which were included with the original dataset and used for initial model validation. All other images in this folder are original and were not part of any training data.
+
 Authors:
 Angel Emmanuel Moreno Velazco, 
 Marco Guzmán Vizcarra,
