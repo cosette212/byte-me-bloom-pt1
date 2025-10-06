@@ -49,6 +49,6 @@ Authors:
 Angel Emmanuel Moreno Velazco, 
 Marco Guzmán Vizcarra,
 Carlos Emanuel Plascencia Gonzales,
+Regina Cosette Ordoñez Pinedo
 Kevín Uziel García Marquez,
-Inés del Socorro Sanchez Martinez,
-Regina Cosette Ordoñez Pinedo.
+Inés del Socorro Sanchez Martinez.
