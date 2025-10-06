@@ -31,6 +31,7 @@ This project requires setting up a virtual environment before running.
 
 ## 7. Place model files  
 - **Action**: Put the files inside the **Predict** folder (⚠️ not inside *models*).  
+- **Action**: Put the file 'plantnet300K_metadata.json' inside the **...\cosette212.github.io-main\HACKATON2025\hackaton2025\Predict**.  
 
 ## 8. Enter the project  
 - **Command**: `cd hackaton2025`  
