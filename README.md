@@ -7,10 +7,8 @@ The platform goes beyond simple identification, functioning as a social network 
 IMPORTANT! Essential Files Notice:
 Without these files, the program and prediction model cannot be loaded. The following links allow you to download the trained model. It is essential to verify that these files are located in the project folder, after its extraction.
 models.py: https://drive.google.com/uc?export=download&id=1qrsLs8SEn3aZgTZf67Emf7-OIGk9R4LL
-
-And also this file:
-https://drive.google.com/uc?export=download&id=144G1tHshn_g7BuRetAms8TVikpCkoZyL
-WARNING! make sure to move this documents to the predict folder 
+json: https://drive.google.com/uc?export=download&id=144G1tHshn_g7BuRetAms8TVikpCkoZyL
+WARNING! make sure to move these documents to the predict folder 
 
 Key Features:
 1)Instant Flower Identification:
