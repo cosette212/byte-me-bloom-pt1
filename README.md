@@ -12,8 +12,6 @@ And also this file:
 https://drive.google.com/uc?export=download&id=144G1tHshn_g7BuRetAms8TVikpCkoZyL
 WARNING! make sure to move this documents to the predict folder 
 
-
-
 Key Features:
 1)Instant Flower Identification:
 Upload a photo and get detailed info on species, care, and regional growth patterns.
