@@ -28,7 +28,7 @@ License:
 - Third-Party Attributions: See [NOTICE.md](NOTICE.md)
 
 How to use:
-For detailed instructions on analyzing flowers, see our [Flower Analysis Guide](flower-guide.md).
+For detailed instructions on analyzing flowers, see our For detailed instructions on analyzing flowers, see our [Flower Analysis Guide](Flower-guide.md).
 
 Image Disclaimer
 IMPORTANT: The images contained in the [`images`](./images) folder of this project:
