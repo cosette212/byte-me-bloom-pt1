@@ -20,3 +20,5 @@ source .venv/bin/activate When you see something like (.venv) C:\Users\YourName\
 6)Install the project dependencies 
 pip install -r requirements.txt 
 This will download all the required libraries automatically (Django, Pillow, requests, etc).
+
+
