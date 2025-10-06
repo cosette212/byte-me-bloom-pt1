@@ -33,7 +33,7 @@ License:
 - Third-Party Attributions: See [NOTICE.md](NOTICE.md)
 
 
-Complete installation instructions:
+Virtual Environment Setup:
 [Setup Guide](Setup.md) 
 
 How to use:
